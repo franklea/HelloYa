@@ -31,10 +31,16 @@
         android:layout_height="wrap_content"
         android:text="查找" />
 
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="337dp"
+        android:clickable="true" />
+
     <TextView
         android:id="@+id/textView_location"
         android:layout_width="match_parent"
-        android:layout_height="249dp"
+        android:layout_height="73dp"
         android:gravity="center" />
 
 </LinearLayout>

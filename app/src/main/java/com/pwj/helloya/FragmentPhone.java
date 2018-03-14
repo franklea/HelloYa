@@ -35,7 +35,7 @@ public class FragmentPhone extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_phone, container, false);
         TextView textViewPhone = (TextView) view.findViewById(R.id.textView_phone);
-        textViewPhone.setText("phone");
+        textViewPhone.setText(R.string.ad);
         return view;
     }
 }

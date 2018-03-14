@@ -27,7 +27,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 return new FragmentPhone();
             case 3:
-                return new FragmentSetting();
+                return new FragmentNews();
             default:
                 return new FragmentHome();
 

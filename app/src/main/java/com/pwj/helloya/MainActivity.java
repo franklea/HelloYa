@@ -11,7 +11,7 @@ import com.baidu.mapapi.map.MapView;
 
 
 public class MainActivity extends AppCompatActivity {
-    private String[] mTitles = new String[]{"首页", "地址","电话", "设置"};
+    private String[] mTitles = new String[]{"首页", "地址","推广", "新闻"};
 
 
     @Override
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setText(mTitles[0]).setIcon(R.mipmap.home);
         tabLayout.getTabAt(1).setText(mTitles[1]).setIcon(R.mipmap.location);
         tabLayout.getTabAt(2).setText(mTitles[2]).setIcon(R.mipmap.phone);
-        tabLayout.getTabAt(3).setText(mTitles[3]).setIcon(R.mipmap.setting);
+        tabLayout.getTabAt(3).setText(mTitles[3]).setIcon(R.mipmap.news);
 
     }
 
