@@ -4,11 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView_phone"
+    <WebView
+        android:id="@+id/webViewAD"
         android:layout_width="match_parent"
-        android:layout_height="521dp"
-        android:gravity="left"
-        android:autoLink="phone"/>
-
+        android:layout_height="match_parent"
+        android:visibility="visible" />
 </LinearLayout>

@@ -6,14 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.webkit.WebView;
 
 /**
  * Created by leon on 3/7/18.
  */
 
-public class FragmentPhone extends Fragment {
-    public static final String ARG_PAGE = "ARG_PAGE_PHONE";
+public class FragmentAds extends Fragment {
+    public static final String ARG_PAGE = "ARG_PAGE_SETTING";
     private int mPage;
 
     public static FragmentHome newInstance(int page) {
@@ -33,10 +33,11 @@ public class FragmentPhone extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_phone, container, false);
-        TextView textViewPhone = (TextView) view.findViewById(R.id.textView_phone);
+        View view = inflater.inflate(R.layout.fragment_peijian, container, false);
 
-        textViewPhone.setText(R.string.ad);
+        WebView webView = (WebView) view.findViewById(R.id.webViewAD);
+        webView.loadUrl("http://103.72.164.2/pwjstore/advlist.php");
+        //webView.getSettings().setJavaScriptEnabled(true);
         return view;
     }
 }

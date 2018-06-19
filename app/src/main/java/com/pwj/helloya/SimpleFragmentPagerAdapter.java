@@ -23,7 +23,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         int type;
         switch (position) {
             case 1:
-                return new FragmentLocation();
+                return new FragmentAds();
             case 2:
                 return new FragmentPhone();
             case 3:

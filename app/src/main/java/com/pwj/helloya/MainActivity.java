@@ -11,7 +11,7 @@ import com.baidu.mapapi.map.MapView;
 
 
 public class MainActivity extends AppCompatActivity {
-    private String[] mTitles = new String[]{"首页", "地址","推广", "新闻"};
+    private String[] mTitles = new String[]{"客户类型", "配件","帮助", "十九大"};
 
 
     @Override

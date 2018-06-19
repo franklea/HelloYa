@@ -9,33 +9,65 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button_home"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            <EditText
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:text="关注客户类型"
+                android:textAllCaps="false"
+                android:background="@null"/>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
-
+            <Button
+                android:id="@+id/request"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="前进" />
+        </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView_home"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="198dp"
-        android:gravity="center" />
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="客户位置"
+        android:textAllCaps="false"
+        android:focusable="false"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleListView"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="blocksDescendants"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="客户类型"
+        android:textAllCaps="false"
+        android:focusable="false"/>
+
+    <ListView
+        android:id="@+id/multi_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        android:descendantFocusability="blocksDescendants"/>
 
 </LinearLayout>

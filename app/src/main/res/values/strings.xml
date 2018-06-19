@@ -4,6 +4,18 @@
     <string name="b3">B3</string>
     <string name="b2">B2</string>
     <string name="b1">B1</string>
-    <string name="distance">距您</string>
-    <string name="ad">这里插播一条广告. 有需要请联系Tel:12312345678</string>
+    <string name="distance">"距您"</string>
+    <string name="ad">"抛丸机销售助手，为您提供大量的潜在客户！\n 1> 抛丸机销售助手能根据您的位置，提供距您100公里内潜在的抛丸机客户分布！\n 2> 您能根据省市浏览不同地方潜在的抛丸机客户分布！\n 3> 登录和注册销售助手，我们还将为您提供——国内任何省市的详细抛丸机潜在客户信息！\n 4> 登录和注册销售助手， 我们还将带您学习十九大内容！ \n\n 如果您有使用建议和需求，请联系吴总：\n 手机： 13805113646"</string>
+    <string name="fujin">"选择您附近的客户"</string>
+    <string name="chengshi">"选择某个城市的客户"</string>
+    <string name="gang">"钢制品公司"</string>
+    <string name="tie">"铁制品公司"</string>
+    <string name="gangtie">"钢铁制品公司"</string>
+    <string name="lv">"铝制品公司"</string>
+    <string name="lunchuan">"轮船公司"</string>
+    <string name="maolian">"锚链公司"</string>
+    <string name="kuangshanjixie">"矿山机械公司"</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
