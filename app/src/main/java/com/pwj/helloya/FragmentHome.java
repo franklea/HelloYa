@@ -56,7 +56,7 @@ public class FragmentHome extends Fragment {
     private int selectedPosition = -1;
     private Button request;
     private static HashMap<Integer, Boolean> multiSelected;
-
+    private static String[] productType = {"钢","铁","钢铁","铝","轮船","锚链","矿山机械"};
 
     @Nullable
     @Override
@@ -69,17 +69,16 @@ public class FragmentHome extends Fragment {
         request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v(LOGTAG, "go go go ...");
-                String choice = "your choice: single: " + selectedPosition + " --- multi : ";
                 if (selectedPosition == -1){
                     Toast.makeText(getContext(), "请选择客户位置", Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 int multisize = 0;
+                String choice = "";
                 for (int i = 0; i < 7; i ++ ){
                     if (multiSelected.get(i)){
-                        choice = choice + i + ", ";
+                        choice = choice + productType[i]+ ",";
                         multisize = multisize + 1;
                     }
                 }
@@ -90,9 +89,11 @@ public class FragmentHome extends Fragment {
                 Log.v(LOGTAG, choice);
                 if (selectedPosition == 0){
                     Intent intent = new Intent(getActivity(), RequestActivity.class);
+                    intent.putExtra("choice", choice);
                     startActivity(intent);
                 }else if (selectedPosition == 1){
                     Intent cityListIntent = new Intent(getActivity(), CityListActivity.class);
+                    cityListIntent.putExtra("choice", choice);
                     startActivity(cityListIntent);
                 }
 

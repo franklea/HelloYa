@@ -113,7 +113,9 @@ public class RequestActivity extends AppCompatActivity {
 
         try{
             sqLiteDatabase = dataBaseHelper.openDatabase();
-            String sql = "select * from pwj_user where round";
+            //TODO:
+
+            String sql = "select * from pwj_user where ";
             querryResults = sqLiteDatabase.rawQuery(sql, null);
             querryResults.moveToFirst();
         } catch (SQLException e){
