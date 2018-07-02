@@ -36,7 +36,7 @@ public class FragmentNews extends Fragment {
         View view = inflater.inflate(R.layout.fragment_news, container, false);
 
         WebView webView = (WebView) view.findViewById(R.id.webView);
-        webView.loadUrl("https://www.baidu.com");
+        webView.loadUrl("http://www.12371.cn/special/19da/");
         webView.getSettings().setJavaScriptEnabled(true);
         return view;
     }

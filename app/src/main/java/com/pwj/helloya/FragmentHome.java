@@ -117,8 +117,8 @@ public class FragmentHome extends Fragment {
     private void initData(){
         //singleItemList
         singleItemList = new ArrayList<Item>();
-        Item item1 = new Item(R.mipmap.location, R.string.fujin);
-        Item item2 = new Item(R.mipmap.pos, R.string.chengshi);
+        Item item1 = new Item(R.mipmap.nearby, R.string.fujin);
+        Item item2 = new Item(R.mipmap.city, R.string.chengshi);
         singleItemList.add(item1);
         singleItemList.add(item2);
 

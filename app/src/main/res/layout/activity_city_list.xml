@@ -11,15 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
-
         <ListView
+            android:id="@+id/customer_city_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

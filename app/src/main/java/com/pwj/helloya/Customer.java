@@ -1,32 +1,13 @@
 package com.pwj.helloya;
 
+import java.io.Serializable;
+
 /**
  * Created by jun on 2018/6/9.
  */
 
-public class SqlData {
-    /*
-     *
-     * CREATE TABLE pwj_user (
-     * ID INTEGER primary key,
-     * companyname VARCHAR(1024),
-     * liaisons VARCHAR(255),
-     * www VARCHAR(255),
-     * regtime Date,
-     * address VARCHAR(255),
-     * longitude DOUBLE,
-     * latitude DOUBLE,
-     * description VARCHAR(10240),
-     * main_products_using_pwj VARCHAR(255),
-     * related_sailer VARCHAR(1024),
-     * used_pwjs VARCHAR(1024),
-     * nation VARCHAR(255),
-     * province VARCHAR(255),
-     * prefecture_level_city VARCHAR(255),
-     * county_level_city VARCHAR(255),
-     * town VARCHAR(255),
-     * village VARCHAR(255));
-     */
+public class Customer implements Serializable{
+
     private int key;
     private String companyname;
     private String liaisons;
@@ -46,10 +27,11 @@ public class SqlData {
     private String town;
     private String village;
 
-    SqlData(int key, String companyname, String liaisons, String www, String date, String address,
-            double longitude, double latitude, String description, String main_products_using_pwj,
-            String related_sailer, String used_pwjs, String nation, String province, String prefectrue_level_city,
-            String county_level_city, String town, String village){
+
+    Customer(int key, String companyname, String liaisons, String www, String date, String address,
+             double longitude, double latitude, String description, String main_products_using_pwj,
+             String related_sailer, String used_pwjs, String nation, String province, String prefectrue_level_city,
+             String county_level_city, String town, String village){
         this.key = key;
         this.companyname = companyname;
         this.liaisons = liaisons;
